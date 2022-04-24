@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite verbose="0" name="Failed suite [com.hrms.testCases.LoginPageTest]">
+  <test thread-count="5" verbose="0" name="Command line test(failed)">
+    <classes>
+      <class name="com.hrms.testCases.LoginPageTest">
+        <methods>
+          <include name="setUp"/>
+          <include name="validateLoginTest"/>
+          <include name="validateTitleTest"/>
+          <include name="validateLogoTest"/>
+        </methods>
+      </class> <!-- com.hrms.testCases.LoginPageTest -->
+    </classes>
+  </test> <!-- Command line test(failed) -->
+</suite> <!-- Failed suite [com.hrms.testCases.LoginPageTest] -->

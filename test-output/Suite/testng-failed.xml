@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]">
+  <listeners>
+    <listener class-name="com.hrms.utilities.Listeners"/>
+  </listeners>
+  <test name="Test">
+    <classes>
+      <class name="com.hrms.testCases.AdminPageTest"/>
+      <class name="com.hrms.testCases.HomePageTest"/>
+      <class name="com.hrms.testCases.PIMPageTest"/>
+    </classes>
+  </test> <!-- Test -->
+  <test name="Test(failed)">
+    <classes>
+      <class name="com.hrms.testCases.PIMPageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrms.testCases.PIMPageTest -->
+      <class name="com.hrms.testCases.HomePageTest">
+        <methods>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrms.testCases.HomePageTest -->
+      <class name="com.hrms.testCases.AdminPageTest">
+        <methods>
+          <include name="verifyAdminPageLabelTest"/>
+          <include name="tearDown"/>
+          <include name="setUp"/>
+        </methods>
+      </class> <!-- com.hrms.testCases.AdminPageTest -->
+    </classes>
+  </test> <!-- Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
